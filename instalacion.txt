@@ -1,0 +1,29 @@
+1. Se puede instalar typescript de varias formas:
+   basado en proyectos, instalar por proyecto
+
+  npm install typescript --save-dev
+
+2. Instalarlo de forma global 
+Ejecutamos lo siguiente en la terminal de windows o del sistema operativo correspondiente:
+
+  npm install -g typescript
+
+para verificar que se instalo ejecutar en la terminal:
+  tsc --version
+La salida: Version 5.2.2
+
+3. Para transpilar un codigo de typescript a javascript, ejecutar
+  tsc app.ts
+Esto creara un archivo app.js que ya es javascript y se puede ejecutar
+
+4. Crearemos un tsconfig.json, ejecutar
+  tsc --init   
+El tsconfig le dice a typescript que tan estricto tiene que ser
+
+5. Si ya tenemos  el archivo tsconfig.json para transpilar lso archivos solo ejecutamos:
+   tsc 
+Esto transpila typescript a javascript
+
+6. PERO: Podemos instalar un watch, un observador que detecta cualquier archivo de typescript y ejecuta la transpilacion, para ello ejecutamos 
+   tsc -w    o tsc --watch
+Esto pone a typescript en modo observador
